@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Tic Tac Infinity</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="index_style.css">
+    </head>
+    <body>
+        <h1>Tic Tac Toe Infinity</h1>
+        Enter game code:
+        <input type="text" id="code" autocomplete="off" autofocus size="3">
+        <script>
+            function formSubmit() {
+                document.location.href = 'game/' + document.getElementById('code').value;
+            }
+        </script>
+        <button onclick="formSubmit();">Submit</button>
+        </br>Or <a href="newgame">create one</a>
+    </body>
+</html>
